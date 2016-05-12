@@ -170,6 +170,7 @@ groups:
     - essentials.invsee.modify
     - essentials.unmute
     - essentials.vanish
+    - factions.admin
     inheritance:
     - Moderator
     - g:groupmanager_moderator
