@@ -40,7 +40,11 @@ groups:
     - essentials.helpop
     - essentials.kit.starter
     - essentials.kit.tools
-    inheritance:[]
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
     info:
       prefix: '&6[&r&bMember&6]&r'
       build: true
@@ -56,7 +60,10 @@ groups:
   - essentials.fly
   inheritance:
   - Member
-  - g:essentials_helper
+  - g:essentials_default
+  - g:bukkit_default
+  - g:groupmanager_default
+  - g:towny_default
   info:
      prefix: '&6[&a&lHelper&6]'
      build: true
@@ -220,6 +227,10 @@ groups:
     - essentials.spawn
     inheritance:
     - Member
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
     info:
       build: true
       prefix: '&0&l[&f&lYou&4&lTuber&0&l]'
@@ -234,6 +245,10 @@ groups:
     - essentials.unmute
     inheritance:
     - Member
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
     info:
       build: true
       prefix: '&1[&9&lChat&1-&9&lMod&1]'
