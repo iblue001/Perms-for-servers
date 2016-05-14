@@ -149,6 +149,7 @@ groups:
     - essentials.home.2
     - essentials.home.3
     - essentials.home.4
+    - acwarn.use
     inheritance:
     - builder
     - g:groupmanager_moderator
