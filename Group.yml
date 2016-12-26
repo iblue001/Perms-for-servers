@@ -49,65 +49,6 @@ groups:
       prefix: '&6[&r&bMember&6]&r'
       build: true
       suffix: ''
-  Helper:
-  default: false
-  permissions:
-  - fly.fly
-  - essentials.feed
-  - essentials.kick
-  - essentials.nick
-  - essentials.helpop
-  - essentials.fly
-  inheritance:
-  - Member
-  - g:essentials_default
-  - g:bukkit_default
-  - g:groupmanager_default
-  - g:towny_default
-  info:
-     prefix: '&6[&a&lHelper&6]'
-     build: true
-     suffix: ''
-  Builder:
-    default: false
-    permissions: 
-    - fly.fly
-    - essentials_gamemode
-    inheritance:
-    - Member
-    - g:essentials_builder
-    - g:towny_builder
-    info:
-      prefix: '&4&kI&r&7[&2Builder&7]&r&4&kI&r&a]'
-      build: true
-      suffix: ''
-   Trial-Builder:
-    default: false
-    permissions:
-    - essentials.nick
-    - worldedit.help
-    - worldedit.wand
-    inheritance:
-    - Member
-    - g:essentials_builder
-    - g:towny_builder
-    info:
-      prefix: '&6[&2&lTrial-Builder]&6' 
-      build: true
-      suffix: ''
-   Head-Builder:
-    default: false
-    permissions: 
-    - fly.fly
-    - essentials_gamemode
-    inheritance:
-    - Member
-    - g:essentials_builder
-    - g:towny_builder
-    info:
-      prefix: '&4&kI&r&7[&2Head-Builder&7]&r&4&kI&r&a'
-      build: true
-      suffix: ''
   Moderator:
     default: false
     permissions:
@@ -151,7 +92,7 @@ groups:
     - essentials.home.4
     - acwarn.use
     inheritance:
-    - builder
+    - Member
     - g:groupmanager_moderator
     - g:bukkit_moderator
     - g:essentials_moderator
@@ -161,41 +102,12 @@ groups:
       prefix: '&4&kI&r&7[&cModerator&7]&r&4&kI&r'
       build: true
       suffix: ''
-  SrModerator:
-    default: false
-    permissions:
-    - essentials.lightning
-    - essentials.clear
-    - essentials.near
-    - essentials.helpop.receive
-    - essentials.book
-    - essentials.book.others
-    - essentials.skull
-    - essentials.skull.others
-    - essentials.customtext
-    - chatcolor.*
-    - essentials.invsee
-    - essentials.invsee.modify
-    - essentials.unmute
-    - essentials.vanish
-    - factions.admin
-    inheritance:
-    - Moderator
-    - g:groupmanager_moderator
-    - g:bukkit_moderator
-    - g:essentials_moderator
-    - g:towny_moderator
-    - g:vanish_moderator
-    info:
-      prefix: '&7&l[&cSrMod&7&l]'
-      build: true
-      suffix: ''
   Admin:
     default: false
     permissions: 
     - '*'
     inheritance:
-    - SrModerator
+    - Moderator
     info:
       prefix: '&7[&4&lAdmin&7]'
       build: true
@@ -220,53 +132,4 @@ groups:
       prefix: '&4&kI&r&7[&4&n&lOwner&7]&r&4&kI'
       build: true
       suffix: ''
-  Youtuber:
-    default: false
-    permissions:
-    - essentials.fly
-    - essentials.feed
-    - essentials.spawn
-    inheritance:
-    - Member
-    - g:groupmanager_default
-    - g:bukkit_default
-    - g:essentials_default
-    - g:towny_default
-    info:
-      build: true
-      prefix: '&0&l[&f&lYou&4&lTuber&0&l]'
-      suffix: ''
-  Chat-Mod:
-    default: false
-    permissions:
-    - essentials.feed
-    - essentials.fly
-    - essentials.kick
-    - essentials.mute
-    - essentials.unmute
-    inheritance:
-    - Member
-    - g:groupmanager_default
-    - g:bukkit_default
-    - g:essentials_default
-    - g:towny_default
-    info:
-      build: true
-      prefix: '&1[&9&lChat&1-&9&lMod&1]'
-      suffix: ''
-  Co-Owner:
-    default: false
-    permissions:
-    - '*'
-    inheritance:
-    - Head-Admin
-    info:
-      build: true
-      prefix: '&6[&4&lCo-Owner&6]'
-      suffix: ''
-      
-  
-     
-    
-      
-      
+ 
